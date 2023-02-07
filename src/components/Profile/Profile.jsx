@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 
+
 import user from "components/Profile/user.json";
 import css from "components/Profile/Profile.module.css"
 
