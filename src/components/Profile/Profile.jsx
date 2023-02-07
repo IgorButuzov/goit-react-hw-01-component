@@ -1,4 +1,4 @@
-import user from "../user.json";
+import user from "components/Profile/user.json";
 
 const Profile = () => {
   const {avatar, username, tag, location, stats } = user;

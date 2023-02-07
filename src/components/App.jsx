@@ -1,5 +1,5 @@
-import Profile from "../components/Profile";
-import user from "../user.json";
+import Profile from "components/Profile/Profile";
+import user from "components/Profile/user.json";
 
 
 export default function App () {
@@ -16,38 +16,3 @@ export default function App () {
     />
   );
 }
-
-// const App = () => {
-//   const {avatar, username, tag, location, stats } = user;
-//   return (
-//     <div class="profile">
-//   <div class="description">
-//     <img
-//       src={avatar}
-//       alt="User avatar"
-//       class="avatar"
-//     />
-//     <p class="name">{username}</p>
-//     <p class="tag">{tag}</p>
-//     <p class="location">{location}</p>
-//   </div>
-
-//   <ul class="stats">
-//     <li>
-//       <span class="label">Followers</span>
-//       <span class="quantity">{stats.followers}</span>
-//     </li>
-//     <li>
-//       <span class="label">Views</span>
-//       <span class="quantity">{stats.views}</span>
-//     </li>
-//     <li>
-//       <span class="label">Likes</span>
-//       <span class="quantity">{stats.likes}</span>
-//     </li>
-//   </ul>
-// </div>
-//   );
-// };
-
-// export default App;
