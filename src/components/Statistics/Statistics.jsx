@@ -1,38 +1,15 @@
-// import PropTypes from "prop-types";
+import Title from "components/Statistics/Title/Title";
+import Stats from "components/Statistics/Stats/Stats";
+import data from "components/Statistics/data.json";
 
-// import data from "components/Statistics/data.json";
-// import css from "components/Statistics/Statistics.module.css"
+import css from "components/Statistics/Statistics.module.css"
 
-// const StatisticMarcup = () => {
-//     const {title, stats } = data;
-// return(
-// <section className={css.statistics}>
-//   <h2 className={css.title}>Upload stats</h2>
+const StatisticMarcup = () => {
+return(
+<section className={css.statistics}>
+<Title title='Upload stats'/>
+<Stats data ={data}/> 
+</section>
+)}
 
-//   <ul className={css.stat_list}>
-//     <li className={css.item}>
-//       <span className={css.label}>{data.label}</span>
-//       <span className={css.percentage}>{data.percentage}</span>
-//     </li>
-//     <li className={css.item}>
-//       <span className={css.label}>{data.label}</span>
-//       <span className={css.percentage}>{data.percentage}</span>
-//     </li>
-//     <li className={css.item}>
-//       <span className={css.label}>{data.label}</span>
-//       <span className={css.percentage}>{data.percentage}</span>
-//     </li>
-//     <li className={css.item}>
-//       <span className={css.label}>{data.label}</span>
-//       <span className={css.percentage}>{data.percentage}</span>
-//     </li>
-//   </ul>
-// </section>
-// )}
-
-// StatisticMarcup.propTypes = {
-//     title: PropTypes.string, 
-//     stats: PropTypes.string, 
-//   }
-
-// export default StatisticMarcup;
+export default StatisticMarcup;

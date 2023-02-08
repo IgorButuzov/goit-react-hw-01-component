@@ -1,8 +1,8 @@
 import Profile from "components/Profile/Profile";
 import user from "components/Profile/user.json";
 
-// import Statistics from "components/Statistics/Statistics";
-// import data from "components/Statistics/data.json";
+import StatisticMarcup from "components/Statistics/Statistics";
+import data from "components/Statistics/data.json";
 
 // import Friends from "components/FriendList/Friends.jsx";
 // import friends from "components/FriendList/friends.json";
@@ -23,17 +23,18 @@ export default function App () {
       username={user.username}
       stats={user.stats}
     />
-    {/* <Statistics
+    <StatisticMarcup
+      key={data.id}
       title={data.title}
       stats={data.stats}
     />
 
-    <Friends
+    {/* <Friends
     avatar={friends.avatar}
     name={friends.name}
     isOnline={friends.isOnline}
-  />
-    <Transactions
+  /> */}
+    {/* <Transactions
     
   /> */}
     </div>

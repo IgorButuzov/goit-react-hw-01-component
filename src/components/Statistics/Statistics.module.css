@@ -1,3 +1,6 @@
-/* .title{
-    color: blue;
-} */
+.statistics{
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 20px;
+    border: solid 1px black;
+}
