@@ -1,15 +1,15 @@
 import PropTypes from "prop-types";
 
-import friends from "components/FriendList/friends.json";
+// import friends from "components/FriendList/friends.json";
 import css from "components/FriendList/Friends.module.css"
 
 const Friends = friends => {
-    const {avatar, name, isOnline} = friends;
+    
 return(
 <ul className={css.friend_list}>
-  <li>friend1{friends.avatar}</li>
-  <li>friend2{friends.name}</li>
-  <li>friend3{friends.isOnline}</li>
+  <li>friend1</li>
+  <li>friend2</li>
+  <li>friend3</li>
 </ul>
 )};
 
