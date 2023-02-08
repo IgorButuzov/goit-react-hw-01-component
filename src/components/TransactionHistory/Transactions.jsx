@@ -31,7 +31,7 @@ return(
 )};
 
 Transactions.propTypes = {
-    friends: PropTypes.string.isRequired, 
+    friends: PropTypes.string, 
   }
   
   export default Transactions;

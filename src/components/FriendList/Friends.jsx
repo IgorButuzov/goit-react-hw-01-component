@@ -6,7 +6,7 @@ import css from "components/FriendList/Friends.module.css"
 const Friends = friends => {
     const {avatar, name, isOnline} = friends;
 return(
-<ul class={css.friend_list}>
+<ul className={css.friend_list}>
   <li>friend1{friends.avatar}</li>
   <li>friend2{friends.name}</li>
   <li>friend3{friends.isOnline}</li>
@@ -15,7 +15,7 @@ return(
 
 
 Friends.propTypes = {
-    friends: PropTypes.string.isRequired, 
+    friends: PropTypes.string, 
   }
   
   export default Friends;

@@ -32,7 +32,7 @@ return(
 
 StatisticMarcup.propTypes = {
     title: PropTypes.string, 
-    stats: PropTypes.string.isRequired, 
+    stats: PropTypes.string, 
   }
 
 export default StatisticMarcup;
