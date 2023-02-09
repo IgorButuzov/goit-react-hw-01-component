@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import css from 'components/Statistics/Stats/Stats.module.css'
 
 const Stats = ({data}) =>{
-
     return <ul className={css.stat_list}>
     {data.map(item => 
         <li className={css.item} style={{ backgroundColor: getRandomHexColor() }} key={item.id}>

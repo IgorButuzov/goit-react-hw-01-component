@@ -1,3 +1,32 @@
-/* .friend_list{
-    color: blueviolet;
-} */
+.friend_list{
+    margin-top: 50px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.item{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+.status_online{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: green;
+}
+.status_offline{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+}

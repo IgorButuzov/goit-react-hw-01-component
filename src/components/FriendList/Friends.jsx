@@ -1,23 +1,36 @@
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 
-// import friends from "components/FriendList/friends.json";
-// import css from "components/FriendList/Friends.module.css"
-
-// const Friends = friends => {
-//     const isOnline = true;
-//     {isOnline && 'online'}
-//     const {avatar, name} = friends;
-// return(
-// <ul className={css.friend_list}>
-//   <li>friend1{friends.avatar}</li>
-//   <li>friend2{friends.name}</li>
-//   <li>friend3{}</li>
-// </ul>
-// )};
+import friends from "components/FriendList/friends.json";
+import css from "components/FriendList/Friends.module.css"
 
 
-// Friends.propTypes = {
-//     friends: PropTypes.string.isRequired, 
-//   }
+const Friends = () => {
+return(
+<ul className={css.friend_list}>
+    {friends.map(friend => 
+    <li className={css.item} key={friend.id}>
+        {friend.isOnline ? 
+        <span className={css.status_online}></span>
+        : <span className={css.status_offline}></span>
+        }
+        <span className={css.status}></span>
+        <img className={css.avatar} src={friend.avatar} alt="User avatar" width="48" />
+        <p className={css.name}>{friend.name}</p>
+    </li>
+    )
+    }
+</ul>
+)};
+
+
+friends.propTypes = {
+    friends: PropTypes.arrayOf(PropTypes.shape({
+        avatar: PropTypes.string,
+        name: PropTypes.string,
+        isOnline: PropTypes.bool,
+        id: PropTypes.number,
+      }),
+      ).isRequired
+  }
   
-//   export default Friends;
+  export default Friends;
