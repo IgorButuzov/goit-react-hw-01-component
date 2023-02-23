@@ -7,19 +7,19 @@ const TransactionHistory = (item) => {
     
 return(
 <table className={css.transaction_history}>
-  <thead className={css.transactions_titles}>
+  <thead>
     <tr>
-      <th>Type</th>
-      <th>Amount</th>
-      <th>Currency</th>
+      <th className={css.transactions_titles}>Type</th>
+      <th className={css.transactions_titles}>Amount</th>
+      <th className={css.transactions_titles}>Currency</th>
     </tr>
   </thead>
   {transactions.map(transaction => 
-  <tbody key={transaction.id} className={css.transactions_items}>
+  <tbody key={transaction.id}>
   <tr>
-    <td>{transaction.type}</td>
-    <td>{transaction.amount}</td>
-    <td>{transaction.currency}</td>
+    <td className={css.transactions_items}>{transaction.type}</td>
+    <td className={css.transactions_items}>{transaction.amount}</td>
+    <td className={css.transactions_items}>{transaction.currency}</td>
   </tr>
 </tbody>
     )
